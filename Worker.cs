@@ -236,8 +236,11 @@ namespace slapsWinService
                        
                     }
                     CreateRegistryKeyIfAbsent(_registeryPath, _timeStampKey, false, @"1587789392");
+                    //Change this value to your own Azure Functions URL.
                     CreateRegistryKeyIfAbsent(_registeryPath, _azureFunctionsKeyWritePassword, true, @"[ !!! !! put here your Get function URL !! !!! ]");
+                    //Change this to the username that you want for your local admin
                     CreateRegistryKeyIfAbsent(_registeryPath, _localAdminUserNameKey, false, @"SuperMaster");
+                    //default interval at which this service will run.
                     CreateRegistryKeyIfAbsent(_registeryPath, _timeIntervalKey, false, @"24");
 
                     interval = Int32.Parse(GetRegistryKeyValue(_registeryPath, _timeIntervalKey));
