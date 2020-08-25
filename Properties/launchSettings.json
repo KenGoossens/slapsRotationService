@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "slapsWinService": {
+      "commandName": "Project",
+      "commandLineArgs": "Rotation",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
